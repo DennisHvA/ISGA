@@ -1,0 +1,212 @@
+/* importeer het Colendra font uit onze eigen map */
+@font-face {
+	font-family: 'Colendra';
+	src: url('../assets/ColendraRegular.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+/* importeer ook de bold gedrukte versie van het Colendra font
+   uit onze eigen map */
+@font-face {
+	font-family: 'Colendra';
+	src: url('../assets/ColendraBold.otf');
+	font-style: normal;
+	font-weight: 700;
+	/* bold */
+}
+
+/* CSS reset */
+*,
+html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* Stel een plaatje van de stippen uit de ISGA guide in als achtergrond
+   en herhaal dit patroon */
+body {
+	background-image: url('../images/huisjes.png'), url('../images/dot_background.png');
+	background-repeat: no-repeat, repeat;
+	background-position: 0em 25em, center;
+}
+
+body>main {
+	margin: 25px 10% 25px 10%;
+}
+
+/* onderstaande styles voor de <h1>, <h2> en <p> tags geven een voorbeeld
+   hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+
+
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 28pt;
+	line-height: 1.8em;
+	color: #D94936;
+	font-weight: 700;
+	/* bold */
+}
+
+h2 {
+	font-family: 'Colendra', sans-serif;
+	font-size: 22pt;
+	line-height: 1.8em;
+	color: #D94936;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	color: #1D1D1B;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+h4 {
+	font-family: 'Colendra', sans-serif;
+	font-size: 18pt;
+	line-height: 1.8em;
+	color: #1D1D1B;
+	font-weight: 700;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14pt;
+	background-color: white;
+	padding: 0.5em;
+}
+
+/* Menu */
+
+header {
+	height: 60px;
+	background-color: #5CB2AC;
+	padding: 1em;
+}
+
+nav input:nth-of-type(1) {
+	display: flex;
+	max-width: 2em;
+	max-height: 2em;
+	margin-left: auto;
+}
+
+body>main>ul {
+	margin-top: 10em;
+}
+
+body>main>ul>li>a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+body>main>ul>li>a:link {
+	text-decoration: none;
+}
+
+body>main>ul>li {
+	text-decoration: none;
+	list-style: none;
+	color: white;
+	background-color: #1D1D1B;
+	padding: 1em;
+	width: 15em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 1em;
+}
+
+/* Home */
+
+body>main>figure {
+	margin-top: 7em;
+	margin-left: 0.5em;
+}
+
+body>main>a {
+	text-decoration: none;
+	color: white;
+	background-color: #1D1D1B;
+	padding: 1em;
+	width: 15em;
+	font-family: 'Josefin Sans';
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	margin-top: 1em;
+}
+
+/* Pagina's */
+
+body>main>section {
+	margin-top: 1em;
+}
+
+body>main>section>figure>img {
+	max-width: 100%;
+}
+
+body>main>section>p {
+	margin-top: 1em;
+}
+
+/* Providers */
+
+body>main>section>section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1em;
+	border: solid;
+	border-color: #5CB2AC;
+	padding: 0.5em;
+	background-color: white;
+}
+
+body>main>section>section>ul {
+	list-style: none;
+}
+
+body>main>section>section>ul>li:before {
+	content: "• ";
+	color: #5CB2AC;
+}
+
+body>main>section>section>ul>li {
+	font-family: 'Colendra', sans-serif;
+	font-size: 20px;
+}
+
+body>main>section>section>a {
+	text-decoration: none;
+	color: white;
+	background-color: #1D1D1B;
+	padding: 0.5em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+
+}
+
+/* Kleuren */
+
+div {
+	color: #5CB2AC;
+	color: #D94936;
+	color: #1D1D1B;
+	;
+}
